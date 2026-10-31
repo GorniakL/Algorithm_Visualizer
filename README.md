@@ -1,6 +1,8 @@
-# Study_Planner
-Aplikacja do nauki z harmonogramem powtórek, która pomaga studentowi przygotować się do egzaminu. 
-Rozkłada materiał na krótkie sesje nauki i dobiera terminy kolejnych powtórek do wyników użytkownika.
+# algorithm_visualizer
+
+**algorithm_visualizer** to aplikacja webowa, która w przystępny i interaktywny
+sposób przedstawia działanie wybranych algorytmów. Pozwala obserwować kolejne
+etapy ich wykonywania oraz porównywać ich działanie i efektywność.
 
 ## Dokumentacja
 
@@ -14,7 +16,7 @@ Projekt będzie rozwijany stopniowo wraz z kolejnymi etapami analizy i projektow
 ## Struktura
 
 ```text
-Study_Planner_PZ/
+algorithm_visualizer/
 ├── README.md
 └── docs/
     └── vision.md

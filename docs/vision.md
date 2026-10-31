@@ -1,9 +1,17 @@
-# Study_Planner
+# algorithm_visualizer
 
-Studenci często przygotowują się do egzaminów w sposób chaotyczny, poświęcając zbyt dużo czasu na zagadnienia, które już znają, i odkładając te, które sprawiają im trudności. Chcemy stworzyć aplikację do nauki z harmonogramem powtórek, która pomoże im przygotować się do egzaminu i podpowie, czego powinni uczyć się dziś.
+Algorytmy trudno zrozumieć wyłącznie z opisu lub kodu. Użytkownik widzi gotowy
+wynik, ale nie widzi, co dzieje się po drodze i dlaczego jedno rozwiązanie jest
+szybsze od drugiego. Chcemy stworzyć edukacyjną aplikację webową, która
+pokazuje działanie algorytmów krok po kroku, w sposób graficzny i interaktywny.
 
-Student tworzy talie, np. „Analiza matematyczna", i dodaje do nich fiszki z pytaniami i odpowiedziami. Po każdej fiszce ocenia, czy odpowiedział źle, z trudem czy łatwo, a aplikacja na tej podstawie wyznacza termin kolejnej powtórki.
+Użytkownik wybiera algorytm, np. sortowanie bąbelkowe, lub wybrany algorytm grafowy, 
+i podaje dane, na których ma on działać. Następnie obserwuje kolejne etapy jego 
+wykonywania: może zatrzymać animację, przejść do następnego kroku albo zmienić 
+jej tempo.
 
-Student wpisuje, w jakim czasie chce nauczyć się materiału, np. w tydzień, oraz ile fiszek jest w stanie przejrzeć każdego dnia. Aplikacja wybiera fiszki do powtórzenia i rozkłada je na kolejne dni, tak aby student zdążył z całym materiałem.
+Użytkownik może także porównać działanie kilku algorytmów na tych samych danych
+i zobaczyć, czym się różnią oraz który z nich wykonuje mniej operacji.
 
-Student widzi swoje postępy: liczbę opanowanych fiszek, zaległe powtórki, skuteczność odpowiedzi oraz wykres postępów w czasie.
+Celem projektu jest narzędzie, które ułatwia naukę algorytmów poprzez ich
+graficzną prezentację i interakcję z użytkownikiem.

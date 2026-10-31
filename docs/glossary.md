@@ -2,23 +2,23 @@
 
 Słownik domenowy (Domain Glossary) definiuje pojęcia używane w projekcie.
 
-# Pojęcia
+## Pojęcia
 
 | Pojęcie | Definicja |
 |---|---|
-| Student | Osoba korzystająca z aplikacji w celu organizowania nauki i przyswajania materiału. |
-| Fiszka | Pojedyncza jednostka materiału do nauki, składająca się z pytania i odpowiedzi. |
-| Pytanie | Strona fiszki, na którą student ma udzielić odpowiedzi. |
-| Odpowiedź | Strona fiszki zawierająca prawidłową treść, z którą student porównuje swoją odpowiedź. |
-| Ocena odpowiedzi | Określenie przez studenta stopnia trudności przypomnienia sobie odpowiedzi: „Źle”, „Trudno” lub „Łatwo”. |
-| Talia | Zbiór fiszek dotyczących określonego przedmiotu lub zagadnienia. |
-| Okres nauki | Czas, w jakim student chce nauczyć się materiału. Wyznacza liczbę dni, na które rozkładana jest nauka. |
-| Dzienny limit fiszek | Liczba fiszek, które student jest w stanie przejrzeć każdego dnia. |
-| Powtórka | Pojedyncze przejrzenie fiszki przez studenta w celu sprawdzenia, czy pamięta odpowiedź. |
-| Termin powtórki | Dzień, w którym student powinien powtórzyć daną fiszkę. Zależy od oceny odpowiedzi. |
-| Zaległa powtórka | Powtórka fiszki, której termin już minął, a student jej nie wykonał. |
-| Sesja nauki | Pojedyncze podejście studenta do nauki, w którym przegląda wybrane fiszki. |
-| Plan nauki | Rozkład fiszek na kolejne dni okresu nauki, uwzględniający dzienny limit fiszek studenta. |
-| Opanowana fiszka | Fiszka, którą student zna na tyle dobrze, że nie wymaga już częstych powtórek. |
-| Skuteczność odpowiedzi | Odsetek powtórek, w których student ocenił swoją odpowiedź jako poprawną. |
-| Postęp | Zmiana stanu wiedzy studenta w czasie, widoczna m.in. w liczbie opanowanych fiszek. |
+| Użytkownik | Osoba korzystająca z aplikacji. |
+| Algorytm | Skończony ciąg kroków prowadzący do rozwiązania określonego problemu. |
+| Krok algorytmu | Pojedyncza czynność wykonywana przez algorytm, np. porównanie dwóch elementów lub odwiedzenie wierzchołka. |
+| Algorytm sortowania | Algorytm porządkujący elementy zbioru danych według ustalonego kryterium, np. rosnąco. |
+| Sortowanie bąbelkowe | Algorytm sortowania, który wielokrotnie porównuje sąsiednie elementy i zamienia je miejscami, jeśli są w złej kolejności. |
+| Algorytm grafowy | Algorytm działający na grafie, np. wyszukujący drogę między wierzchołkami lub przeglądający graf. |
+| Graf | Struktura składająca się z wierzchołków połączonych krawędziami. |
+| Wierzchołek | Pojedynczy punkt grafu. |
+| Krawędź | Połączenie między dwoma wierzchołkami grafu. |
+| Dane wejściowe | Zbiór elementów lub graf, na których działa wybrany algorytm. |
+| Wizualizacja | Graficzna prezentacja kolejnych kroków algorytmu na danych wejściowych. |
+| Tempo wizualizacji | Szybkość, z jaką kolejne kroki algorytmu są prezentowane użytkownikowi. |
+| Liczba operacji | Liczba kroków określonego rodzaju wykonanych przez algorytm, np. porównań lub zamian. |
+| Porównanie algorytmów | Zestawienie działania co najmniej dwóch algorytmów na tych samych danych wejściowych. |
+| Wyróżnienie | Graficzne oznaczenie elementu w wizualizacji, np. kolorem, które pokazuje, co algorytm z nim aktualnie robi. |
+| Legenda | Objaśnienie znaczenia wyróżnień stosowanych w wizualizacji. |
