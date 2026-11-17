@@ -42,7 +42,6 @@ Każde wymaganie posiada unikalny identyfikator, np. `FR-01` lub `NFR-01`.
 
 ## Pytania otwarte
 
-- Które algorytmy sortowania i które algorytmy grafowe mają być dostępne w pierwszej wersji?
 - W jaki sposób użytkownik definiuje graf: wybiera gotowy, czy tworzy własny?
 - Czy grafy mają być skierowane, nieskierowane, ważone?
 - Czy porównanie algorytmów ma opierać się na liczbie operacji, czy na czasie wykonania?
@@ -51,3 +50,11 @@ Każde wymaganie posiada unikalny identyfikator, np. `FR-01` lub `NFR-01`.
 - Jaki jest maksymalny rozmiar danych wejściowych?
 - Jaki rozmiar danych wejściowych powinien być obsługiwany, aby wizualizacja pozostała czytelna i płynna?
 - Czy użytkownik musi mieć konto, aby korzystać z aplikacji?
+
+
+## Założenia pierwszej wersji
+
+- System udostępnia algorytmy sortowania: sortowanie bąbelkowe i sortowanie przez wstawianie, oraz jeden algorytm grafowy: przeszukiwanie wszerz.
+- Użytkownik wybiera graf spośród gotowych grafów. Grafy są nieskierowane i nieważone.
+- Porównanie algorytmów opiera się na liczbie operacji i dotyczy algorytmów sortowania.
+- Korzystanie z aplikacji nie wymaga konta użytkownika.

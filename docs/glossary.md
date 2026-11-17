@@ -11,7 +11,9 @@ Słownik domenowy (Domain Glossary) definiuje pojęcia używane w projekcie.
 | Krok algorytmu | Pojedyncza czynność wykonywana przez algorytm, np. porównanie dwóch elementów lub odwiedzenie wierzchołka. |
 | Algorytm sortowania | Algorytm porządkujący elementy zbioru danych według ustalonego kryterium, np. rosnąco. |
 | Sortowanie bąbelkowe | Algorytm sortowania, który wielokrotnie porównuje sąsiednie elementy i zamienia je miejscami, jeśli są w złej kolejności. |
+| Sortowanie przez wstawianie | Algorytm sortowania, który kolejno bierze każdy element i wstawia go na właściwe miejsce w już uporządkowanej części danych. |
 | Algorytm grafowy | Algorytm działający na grafie, np. wyszukujący drogę między wierzchołkami lub przeglądający graf. |
+| Przeszukiwanie wszerz (BFS) | Algorytm grafowy, który od wierzchołka początkowego odwiedza najpierw wszystkich jego sąsiadów, następnie sąsiadów sąsiadów i tak dalej. |
 | Graf | Struktura składająca się z wierzchołków połączonych krawędziami. |
 | Wierzchołek | Pojedynczy punkt grafu. |
 | Krawędź | Połączenie między dwoma wierzchołkami grafu. |
