@@ -11,8 +11,8 @@ Projekt będzie rozwijany stopniowo wraz z kolejnymi etapami analizy i projektow
 - [Wizja](docs/vision.md)
 - [Słownik domenowy](docs/glossary.md)
 - [Wymagania](docs/requirements.md)
-- [Przypadki użycia](docs/use-cases/README.md)
-- [Diagram klas](docs/class-diagram.md)
+- [Przypadki użycia](docs/use_cases/README.md)
+- [Diagram klas](docs/class_diagram.md)
 
 ## Struktura
 
@@ -25,11 +25,11 @@ algorithm_visualizer/
 │   ├── requirements.md
 │   ├── use_cases/
 │   │   ├── README.md
-│   │   ├── UC-01-visualize-sorting.md
-│   │   ├── UC-02-visualize-graph-algorithm.md
-│   │   ├── UC-03-control-visualization.md
-│   │   └── UC-04-compare-sorting.md
-│   └── class-diagram.md
+│   │   ├── UC_01_visualize_sorting.md
+│   │   ├── UC_02_visualize_graph_algorithm.md
+│   │   ├── UC_03_control_visualization.md
+│   │   └── UC_04_compare_sorting.md
+│   └── class_diagram.md
 └── src/
     ├── krok.py
     ├── graf.py

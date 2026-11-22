@@ -22,7 +22,7 @@ System udostępnia algorytm przeszukiwania wszerz oraz co najmniej jeden gotowy 
 2. System wyświetla krótki opis wybranego algorytmu.
 3. Użytkownik wybiera jeden z gotowych grafów oraz wierzchołek początkowy.
 4. Użytkownik uruchamia wizualizację.
-5. System prezentuje kolejne kroki algorytmu na grafie, wyróżniając odwiedzane wierzchołki i krawędzie, oraz wyświetla liczbę wykonanych operacji.
+5. System prezentuje kolejne kroki algorytmu na grafie, wyróżniając odwiedzane wierzchołki i krawędzie, oraz wyświetla liczbę wykonanych operacji. W grafie skierowanym BFS przechodzi od początku krawędzi do jej końca, a w nieskierowanym może przejść w obu kierunkach. Waga krawędzi nie wpływa na wybór sąsiada.
 6. System prezentuje graf po zakończeniu działania algorytmu.
 
 ## Scenariusze alternatywne

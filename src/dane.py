@@ -2,13 +2,12 @@
 from __future__ import annotations
 
 import random
-import re
 from dataclasses import dataclass, field
 
 
 @dataclass
 class DaneSortowania:
-    # Wartości do ustalenia
+    # Limity liczby elementów i ich wartości
     MIN_ELEMENTOW = 2
     MAKS_ELEMENTOW = 50
     MIN_WARTOSC = 1
@@ -21,7 +20,7 @@ class DaneSortowania:
         """Tworzy dane z tekstu, w którym liczby oddzielono przecinkami lub spacjami
         Zgłasza ValueError, jeśli któryś fragment nie jest liczbą całkowitą
         """
-        fragmenty = [f for f in re.split(r"[,\s]+", tekst.strip()) if f]
+        fragmenty = tekst.replace(",", " ").split()
         elementy = []
         for fragment in fragmenty:
             try:
@@ -31,17 +30,24 @@ class DaneSortowania:
         return DaneSortowania(elementy)
 
     @staticmethod
-    def wygenerujLosowe(liczba: int) -> DaneSortowania:
-        """Tworzy dane z podaną liczbą losowych liczb całkowitych
-        Zgłasza ValueError, jeśli `liczba` jest poza dozwolonym zakresem
+    def wygenerujLosowe(
+        liczba: int, minWartosc: int = MIN_WARTOSC, maxWartosc: int = MAKS_WARTOSC
+    ) -> DaneSortowania:
+        """Losuje liczby całkowite z podanego przedziału, łącznie z jego granicami.
+        Zgłasza ValueError dla błędnej liczby elementów lub granic przedziału.
         """
         if not DaneSortowania.MIN_ELEMENTOW <= liczba <= DaneSortowania.MAKS_ELEMENTOW:
             raise ValueError(
                 f"Liczba elementów musi mieścić się w zakresie "
                 f"{DaneSortowania.MIN_ELEMENTOW}–{DaneSortowania.MAKS_ELEMENTOW}."
             )
+        if not DaneSortowania.MIN_WARTOSC <= minWartosc <= maxWartosc <= DaneSortowania.MAKS_WARTOSC:
+            raise ValueError(
+                f"Podaj granice od {DaneSortowania.MIN_WARTOSC} do {DaneSortowania.MAKS_WARTOSC}. "
+                "Dolna granica nie może być większa od górnej."
+            )
         return DaneSortowania(
-            [random.randint(DaneSortowania.MIN_WARTOSC, DaneSortowania.MAKS_WARTOSC) for _ in range(liczba)]
+            [random.randint(minWartosc, maxWartosc) for _ in range(liczba)]
         )
 
     def waliduj(self) -> list[str]:

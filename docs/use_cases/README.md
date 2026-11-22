@@ -19,7 +19,7 @@ flowchart LR
 flowchart LR
     Uzytkownik["Użytkownik"]
 
-    subgraph System["algorithm-visualizer"]
+    subgraph System["algorithm_visualizer"]
         UC01([UC-01<br/>Wizualizacja algorytmu sortowania])
         UC02([UC-02<br/>Wizualizacja algorytmu grafowego])
         UC03([UC-03<br/>Sterowanie przebiegiem wizualizacji])
@@ -55,7 +55,7 @@ left to right direction
 
 actor Użytkownik
 
-rectangle "algorithm-visualizer" {
+rectangle "algorithm_visualizer" {
     usecase "UC-01\nWizualizacja algorytmu sortowania" as UC01
     usecase "UC-02\nWizualizacja algorytmu grafowego" as UC02
     usecase "UC-03\nSterowanie przebiegiem wizualizacji" as UC03
@@ -77,7 +77,7 @@ UC03 ..> UC02 : <<extend>>
 
 | ID | Przypadek użycia | Aktor | Wymagania |
 |----|------------------|-------|-----------|
-| [UC-01](UC-01-visualize-sorting.md) | Wizualizacja algorytmu sortowania | Użytkownik | FR-01, FR-02, FR-03, FR-04, FR-06, FR-07, FR-08, FR-13, FR-16 |
-| [UC-02](UC-02-visualize-graph-algorithm.md) | Wizualizacja algorytmu grafowego | Użytkownik | FR-01, FR-02, FR-05, FR-06, FR-07, FR-08, FR-13 |
-| [UC-03](UC-03-control-visualization.md) | Sterowanie przebiegiem wizualizacji | Użytkownik | FR-09, FR-10, FR-11, FR-12 |
-| [UC-04](UC-04-compare-sorting.md) | Porównanie algorytmów sortowania | Użytkownik | FR-01, FR-03, FR-04, FR-14, FR-15, FR-16 |
+| [UC-01](UC_01_visualize_sorting.md) | Wizualizacja algorytmu sortowania | Użytkownik | FR-01, FR-02, FR-03, FR-04, FR-06, FR-07, FR-08, FR-13, FR-16 |
+| [UC-02](UC_02_visualize_graph_algorithm.md) | Wizualizacja algorytmu grafowego | Użytkownik | FR-01, FR-02, FR-05, FR-06, FR-07, FR-08, FR-13, FR-16 |
+| [UC-03](UC_03_control_visualization.md) | Sterowanie przebiegiem wizualizacji | Użytkownik | FR-09, FR-10, FR-11, FR-12 |
+| [UC-04](UC_04_compare_sorting.md) | Porównanie algorytmów sortowania | Użytkownik | FR-01, FR-03, FR-04, FR-14, FR-15, FR-16 |

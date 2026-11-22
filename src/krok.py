@@ -14,12 +14,13 @@ class RodzajKroku(Enum):
     ODWIEDZENIE = "ODWIEDZENIE"
 
 
+# Dataclass automatycznie tworzy konstruktor klasy, skraca kod
+# frozen=True blokuje przypisywanie nowych wartosci do atrybutow, nie blokuje modyfikacji zawartosci list
 @dataclass(frozen=True)
 class Krok:
-    """Pojedynczy krok algorytmu. Po utworzeniu nie jest zmieniany
+    """Pojedynczy krok algorytmu. Po utworzeniu pola są zablokowane, ale zawartość list można zmieniać.
     rodzaj    -- rodzaj wykonanej czynności (na jego podstawie liczymy operacje),
-    elementy  -- indeksy w danych lub identyfikatory wierzchołków, których dotyczy krok
-                 (wizualizacja wyróżnia je graficznie),
+    elementy  -- indeksy danych lub identyfikatory wierzchołków, których dotyczy krok (wizualizacja wyróżnia je graficznie),
     stan      -- stan danych po wykonaniu kroku
     """
 
