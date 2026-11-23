@@ -14,8 +14,8 @@ class RodzajKroku(Enum):
     ODWIEDZENIE = "ODWIEDZENIE"
 
 
-# Dataclass automatycznie tworzy konstruktor klasy, skraca kod
-# frozen=True blokuje przypisywanie nowych wartosci do atrybutow, nie blokuje modyfikacji zawartosci list
+#dataclass automatycznie tworzy konstruktor klasy, skraca kod
+#frozen=True blokuje przypisywanie nowych wartosci do atrybutow, nie blokuje modyfikacji zawartosci list
 @dataclass(frozen=True)
 class Krok:
     """Pojedynczy krok algorytmu. Po utworzeniu pola są zablokowane, ale zawartość list można zmieniać.

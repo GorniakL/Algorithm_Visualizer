@@ -5,16 +5,18 @@ import random
 from dataclasses import dataclass, field
 
 
+#dataclass automatycznie tworzy konstruktor klasy, skraca kod
 @dataclass
 class DaneSortowania:
-    # Limity liczby elementów i ich wartości
+    #limity do ustalenia
     MIN_ELEMENTOW = 2
     MAKS_ELEMENTOW = 50
     MIN_WARTOSC = 1
     MAKS_WARTOSC = 100
 
-    elementy: list[int] = field(default_factory=list)
+    elementy: list[int] = field(default_factory=list) #automatycznie tworzy pusta liste
 
+    #metoda statyczna nie wymaga utworzenia obiektu klasy
     @staticmethod
     def zTekstu(tekst: str) -> DaneSortowania:
         """Tworzy dane z tekstu, w którym liczby oddzielono przecinkami lub spacjami

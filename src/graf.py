@@ -4,8 +4,8 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 
 
-# Dataclass automatycznie tworzy konstruktor klasy, skraca kod
-# frozen=True blokuje przypisywanie nowych wartosci do atrybutow, nie blokuje modyfikacji zawartosci list
+#dataclass automatycznie tworzy konstruktor klasy, skraca kod
+#frozen=True blokuje przypisywanie nowych wartosci do atrybutow, nie blokuje modyfikacji zawartosci list
 @dataclass(frozen=True)
 class Wierzcholek:
     """Wierzchołek grafu"""
