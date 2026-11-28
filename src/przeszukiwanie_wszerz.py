@@ -23,7 +23,9 @@ class PrzeszukiwanieWszerz(AlgorytmGrafowy):
         """Zwraca kroki odwiedzin od startu do celu lub do wyczerpania kolejki"""
         if start not in graf.wierzcholki:
             raise ValueError("Wierzchołek początkowy nie należy do grafu.")
-
+        if cel is not None and cel not in graf.wierzcholki:
+            raise ValueError("Wierzchołek docelowy nie należy do grafu.")
+        
         kolejka = deque([start])
         odkryte = {start.identyfikator}
         kolejnosc: list[int] = []

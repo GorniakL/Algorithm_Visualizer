@@ -61,6 +61,8 @@ class DaneSortowania:
             bledy.append(f"Podaj co najmniej {self.MIN_ELEMENTOW} liczby.")
         if len(self.elementy) > self.MAKS_ELEMENTOW:
             bledy.append(f"Podaj najwyżej {self.MAKS_ELEMENTOW} liczb.")
-        if any(not self.MIN_WARTOSC <= x <= self.MAKS_WARTOSC for x in self.elementy):
+        if any(type(x) is not int for x in self.elementy):
+            bledy.append("Wszystkie elementy muszą być liczbami całkowitymi.")
+        elif any(not self.MIN_WARTOSC <= x <= self.MAKS_WARTOSC for x in self.elementy):
             bledy.append(f"Liczby muszą mieścić się w zakresie {self.MIN_WARTOSC}–{self.MAKS_WARTOSC}.")
         return bledy

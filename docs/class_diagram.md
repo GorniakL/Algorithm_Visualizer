@@ -5,7 +5,7 @@ Diagram klas przedstawia klasy systemu, ich atrybuty, metody oraz relacje międz
 ```plantuml
 @startuml
 
-abstract class Algorytm {
+class Algorytm {
     +nazwa : str
     +opis : str
 }
@@ -120,8 +120,8 @@ PorownanieAlgorytmow "0..1" *-- "0..2" Wizualizacja
 PorownanieAlgorytmow "*" --> "2" AlgorytmSortowania
 PorownanieAlgorytmow "*" --> "1" DaneSortowania
 
-KatalogAlgorytmow "1" o-- "1..*" Algorytm
-KatalogGrafow "1" o-- "1..*" Graf
+KatalogAlgorytmow "1" o-- "0..*" Algorytm
+KatalogGrafow "1" o-- "0..*" Graf
 
 @enduml
 ```
